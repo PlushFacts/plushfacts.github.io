@@ -1,0 +1,82 @@
+<!doctype html>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 742px;
+    max-height: 100%;
+    max-width: 90%;
+}
+.ctext {
+  margin-left: auto;
+  margin-right: auto;
+	width: 60%
+}
+.container {
+  display: flex;
+}
+.container.space-around {
+  justify-content: space-around;
+  width: 60%
+ margin-left: 0px;
+  margin-right: 0px;
+    padding: 0px;
+    margin: 0px;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-image: url('Backgrounds/bg1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@font-face {
+  font-family: comicfont;
+  src: url(comicfont.ttf);
+}
+.textentry {
+	height: 56px; 
+	width: 128px; 
+	font-size: 40px; 
+	background-color: #575d6d; 
+	border: 8px solid #33363d;
+	font-family: comicfont;
+	color: #33363d;
+}
+a {
+  color: #2e3a59;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: comicfont;
+  font-size: 30px; 
+    color: #2e3a59;
+    text-shadow:
+    -1px -1px 0 #2e3a59,
+    1px -1px 0 #2e3a59,
+    -1px 1px 0 #2e3a59,
+    1px 1px 0 #2e3a59;  
+}
+</style>
+<html>
+	<head>
+		<title>Cool Comic</title>
+		<meta name="description" content="A cool comic">
+		<meta name="keywords" content="comic website">
+	</head>
+	<div class="container space-around">
+	<a href="index.html">COMIC</a>
+	<a href="#">ABOUT</a>
+	<a href="contact.html">CONTACT</a>
+	</div>
+	<body>
+		<p style="font-family: comicfont; font-size: 32px; margin: 12px;" id="pagedate">This page is based around the adventures of Limen the turtle (pictured below). Many of the characters, stories and dialogue is based around Awesome Fact Accounts, a subcommunity of Twitter accounts. If you want to find out more, either send me a message via my <a href="contact.html">Contact</a> page or search for "Awesome Nintendo Facts" (maybe one day i'll make a fact account encyclopedia). Some accounts referenced in the story include <a href="https://twitter.com/factsfossile">@FactsFossile</a> and more.</p>
+		<img src="limen.jpg" class = "center"; style="border-radius: 8px; border: 10px solid #33363d; width: 371px; max-height: 100%; max-width: 40%;" id="image">
+	</body>
+</html>

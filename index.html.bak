@@ -1,0 +1,94 @@
+<!doctype html>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+    max-height: 100%;
+    max-width: 90%;
+}
+.ctext {
+  margin-left: auto;
+  margin-right: auto;
+	width: 60%
+}
+.container {
+  display: flex;
+}
+.container.space-around {
+  justify-content: space-around;
+  width: 60%
+ margin-left: 0px;
+  margin-right: 0px;
+    padding: 0px;
+    margin: 0px;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-image: url('Backgrounds/bg1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@font-face {
+  font-family: comicfont;
+  src: url(comicfont.ttf);
+}
+.textentry {
+	height: 56px; 
+	width: 128px; 
+	font-size: 40px; 
+	background-color: #575d6d; 
+	border: 8px solid #33363d;
+	font-family: comicfont;
+	color: #33363d;
+}
+a {
+  color: #2e3a59;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: comicfont;
+  font-size: 30px; 
+    color: #2e3a59;
+    text-shadow:
+    -1px -1px 0 #2e3a59,
+    1px -1px 0 #2e3a59,
+    -1px 1px 0 #2e3a59,
+    1px 1px 0 #2e3a59;  
+}
+</style>
+<html>
+	<script src="info.js"></script> 
+	 <script src="webcomic.js"></script>
+	
+	<head>
+		<title>Cool Comic</title>
+		<meta name="description" content="A cool comic">
+		<meta name="keywords" content="comic website">
+	</head>
+	<div class="container space-around">
+	<a href="#">COMIC</a>
+	<a href="about.html">ABOUT</a>
+	<a href="contact.html">CONTACT</a>
+	</div>
+	<body>
+		<img src="pages/1.png" class="center" style="border-radius: 8px; border: 10px solid #33363d;" id="image">
+		<div class="center2">
+		<input type="image" src="first.png" onclick="gofirst()"/>
+		<input type="image" src="left.png" onclick="goleft()"/>
+		<input type="image" src="right.png" onclick="goright()"/>
+		<input type="image" src="last.png" onclick="golast()"/>
+		 <input type="text" id="pagenum" name="pagenum" class="textentry" onchange="getnumber()">
+		</div>
+		<div>
+		<p style="text-align:center; font-family: comicfont; font-size: 40px;" class="ctext" id="pagedate">Page 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00/00/0000</p>
+		</div>
+	</body>
+</html>
