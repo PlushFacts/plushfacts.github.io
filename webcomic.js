@@ -1,5 +1,5 @@
 let pagenumber = 1;
-let pageamount = 500;
+let pageamount = 502;
 
 function goright() {
 	if (pagenumber < pageamount) {
